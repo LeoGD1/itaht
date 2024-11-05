@@ -9,11 +9,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const testimonios = [
-  {id: 1, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Moure Dev', estatus: 'Ex alumno', comentario:'lorem ipsum lasf oaluvis okashfa oasfas wfasgg asfxsef asdftgt'},
-  {id: 2, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Mariana Gonzaga', estatus: 'Ex alumno', comentario:'lorem ipsum lasf oaluvis okashfa oasfas wfasgg asfxsef asdftgt'},
-  {id: 3, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Aldo Montañez', estatus: 'Alumno', comentario:'lorem ipsum lasf oaluvis okashfa oasfas wfasgg asfxsef asdftgt'},
-  {id: 4, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Jesus Humberto', estatus: 'Alumno', comentario:'lorem ipsum lasf oaluvis okashfa oasfas wfasgg asfxsef asdftgt'},
-  {id: 5, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Pamela Lopez', estatus: 'Alumna', comentario:'lorem ipsum lasf oaluvis okashfa oasfas wfasgg asfxsef asdftgt'}
+  {id: 1, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Nombre alumno', estatus: 'Ex alumno', comentario:'comentario'},
+  {id: 2, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Nombre alumno', estatus: 'Alumno', comentario:'comentario'},
+  {id: 3, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Nombre alumno', estatus: 'Ex alumno', comentario:'comentario'},
+  {id: 4, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Nombre alumno', estatus: 'Alumno', comentario:'comentario'},
+  {id: 5, img:'https://yt3.googleusercontent.com/BrHvTVuz3HnKJx656FpXzm_B8il50fI281AC0PtrE7RgHazzPqmUudw7yUzqmnuFsaCp6YkTEQ=s900-c-k-c0x00ffffff-no-rj', nombre: 'Nombre alumno', estatus: 'Ex alumno', comentario:'comentario'}
 ]
 
 const Testimonios = () => {

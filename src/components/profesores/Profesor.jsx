@@ -9,11 +9,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const datosProfesores = [
-  {id: 1, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Antonio Lopez Huerta', grado: 'Lic. en Derecho', materia:'Derecho Penal'},
-  {id: 2, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Cesar Ríos Garatachea', grado: 'Lic. Actuaria Financiera', materia:'Calculo diferencial'},
-  {id: 3, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Leonardo de Gonzalez Díaz', grado: 'Lic. Informática', materia:'Programación'},
-  {id: 4, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Ricardo Hernández', grado: 'Analista', materia:'Sistemas de Informacion'},
-  {id: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Erikc Guerra', grado: 'Power Apps', materia:'Programacion declarativa'}
+  {id: 1, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Nombre profesor', grado: 'Grado académico', materia:'Nombre materia'},
+  {id: 2, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Nombre profesor', grado: 'Grado académico', materia:'Nombre materia'},
+  {id: 3, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Nombre profesor', grado: 'Grado académico', materia:'Nombre materia'},
+  {id: 4, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Nombre profesor', grado: 'Grado académico', materia:'Nombre materia'},
+  {id: 5, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIffo1U4UPt2jv0v8eLRp83nvVzouqbVJNg&s', nombre: 'Nombre profesor', grado: 'Grado académico', materia:'Nombre materia'}
 ]
 
 export default function Profesor(){

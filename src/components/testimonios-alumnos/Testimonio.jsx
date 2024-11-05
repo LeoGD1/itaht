@@ -8,7 +8,7 @@ export default function DatosProfesor({ img ,nombre, estatus, comentario  }) {
         alt={nombre} />
       <h4 className="font-semibold mb-1">{nombre}</h4>
       <p className="mb-1">{estatus}</p>
-      <p className='mb-5'>{comentario}</p>
+      <p className='mb-5'>"{comentario}"</p>
     </article>
   )
 }
