@@ -1,0 +1,31 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro";
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+import Map from "../icons/Map.astro"
+---
+
+<section class="bg-blue-itaht w-full text-center">
+  <MaxScreen class="px-6 py-20">
+    <div class="w-full flex items-center flex-col text-sm">
+      <div class="flex gap-x-5">
+        <img src="/logo-blanco-itaht.svg" alt="logo ITAHT" class="w-24">
+        <img src="/somos-uaemex.svg" alt="Somos UAEMEX" class="w-24">
+      </div>
+      <h5 class="text-center mt-6 text-white font-medium">Instituto Técnico Administrativo y Humanístico de Toluca</h5>
+      <div class="flex gap-x-6 mt-4">
+        <a href="https://www.facebook.com/preparatoriaitaht" target="_blank" class="hover:opacity-50">
+          <Facebook fill="#fff" />
+        </a>
+        <a href="https://www.instagram.com/prepaitaht/" target="_blank" class="hover:opacity-50">
+          <Instagram fill="#fff" />
+        </a>
+        <a href="https://maps.app.goo.gl/51uHpnoN6T2N72me7" target="_blank" class="hover:opacity-50">
+          <Map fill="#fff" />
+        </a>
+      </div>
+      <p class="text-white mt-4">Todos los derechos reservados &#169;.</p>
+      <p class="text-white mt-3">Sitio web desarrollado por Leonardo G.D.</p>
+    </div>
+  </MaxScreen>
+</section>

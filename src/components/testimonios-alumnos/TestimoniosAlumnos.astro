@@ -1,0 +1,14 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import Title from "../Title.astro"
+import Testimonios from './Testimonios'
+---
+
+<section>
+  <MaxScreen class="px-4 py-20">
+    <Title class="text-center">Testimonios de alumnos</Title>
+    <div class="w-full">
+      <Testimonios client:visible />
+    </div>
+  </MaxScreen>
+</section>

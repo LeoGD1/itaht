@@ -1,0 +1,23 @@
+---
+import MaxScreen from '../../layouts/MaxScreen.astro'
+import Title from '../Title.astro'
+import CTA from '../CTA.astro'
+import Camera from '../icons/Camera.astro'
+---
+
+<section class="w-full bg-hero-videoconference sm:bg-hero-videoconference-resp bg-center bg-cover">
+  <MaxScreen class="px-4 py-20">
+    <div class="w-full max-w-[600px] text-left text-white">
+      <Title class="text-balance">¡Ahora puedes solicitar información por videoconferencia!</Title>
+      <div class="flex">
+        <CTA class="bg-red-itaht hover:bg-red-500 text-sm transition-colors cursor-pointer flex py-3 px-6 gap-x-2 items-center rounded-md"
+          texto="Solicitar Información"
+          href="#">
+          <Camera 
+            stroke="#fff"
+            slot="before" />
+        </CTA>
+      </div>
+    </div>
+  </MaxScreen>
+</section>

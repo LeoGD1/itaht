@@ -1,0 +1,14 @@
+---
+const {class: customClass, ...props} = Astro.props
+const combinedClasses = `${customClass}`
+
+const { texto, link } = Astro.props
+---
+<a
+  {...props}
+  class={combinedClasses}
+  href={link}>
+  <slot name="before" />
+  {texto}
+  <slot name="after" />
+</a>

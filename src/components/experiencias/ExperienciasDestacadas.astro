@@ -1,0 +1,42 @@
+---
+import { imageConfig } from 'astro:assets'
+import MaxScreen from '../../layouts/MaxScreen.astro'
+import Title from '../Title.astro'
+import Experiencia from './Experiencia.astro'
+
+const images = [
+  {
+    id: 1, image:'https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-6/293065807_2612465965554470_5407074092403129717_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ofDtjyMzKZQQ7kNvgGarost&_nc_zt=23&_nc_ht=scontent.fmex31-1.fna&_nc_gid=ArS9gprQkMwLFBJL5ZavE_B&oh=00_AYCIqIHvIgKrcJA0-soKt6uCHNzlmkJ44ab47POTsK87Ig&oe=6729EF69', text: 'Egreso 2019-2022.'
+  },
+  {
+    id: 2, image:'https://scontent.fmex5-1.fna.fbcdn.net/v/t39.30808-6/277222751_2512430395558028_5220456816646937293_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fA1mv_py2RoQ7kNvgFq1uba&_nc_zt=23&_nc_ht=scontent.fmex5-1.fna&_nc_gid=AcBHRAMA-FeeTu5zoVZaI50&oh=00_AYDwGz4jzDYQtayCG8EXoqNABVCYY7wFjfiMm_T_8Oc3dw&oe=6729F045', text: 'Visitando UNITEC.'
+  },
+  {
+    id: 3, image:'https://scontent.fmex27-1.fna.fbcdn.net/v/t39.30808-6/279883990_2545908288876905_5863936711293443591_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=qj6DIPHRsiMQ7kNvgHyFiJy&_nc_zt=23&_nc_ht=scontent.fmex27-1.fna&_nc_gid=AMUvCMzxjP8MQG0ufWTbVb7&oh=00_AYAxLrkxOUubg2TMqOz0nypK3Jq-yMYtwtBSj_J0mN0fFg&oe=672A0554', text: 'Bienvenida 1er semestre.'
+  },
+  {
+    id: 4, image:'https://scontent.fmex31-1.fna.fbcdn.net/v/t1.6435-9/71058265_1644627055671704_741250757596020736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=7EHcK3VAH_gQ7kNvgFPWekD&_nc_zt=23&_nc_ht=scontent.fmex31-1.fna&_nc_gid=A1Ndmi2SYckiznwINoevktP&oh=00_AYAO5N0q7OumAYYoorJ6cA3oghljioCbjEqzxA3sNZoCig&oe=674BBB50', text: 'Festival de Independencia.'
+  },
+  {
+    id: 5, image:'https://scontent.fmex28-1.fna.fbcdn.net/v/t1.6435-9/62082771_1561569110644166_2707962577886904320_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=T9_vHUynu5EQ7kNvgHskFZd&_nc_zt=23&_nc_ht=scontent.fmex28-1.fna&_nc_gid=Ali-wNg9I2eEWQ9E-mNL4Cv&oh=00_AYBrQlFUTFRDLMu_AKR7GLJGxcCj5QREiVdI4Ldq0GYNew&oe=674B9F7B', text: 'Expo Emprendimiento.'
+  },
+  {
+    id: 6, image:'https://scontent.fmex28-1.fna.fbcdn.net/v/t39.30808-6/278077431_972655480037994_8762025736701977976_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=L58HhNuKPPYQ7kNvgFJ9dMt&_nc_zt=23&_nc_ht=scontent.fmex28-1.fna&_nc_gid=AQxBo53zrIz3fd0tQI9IUpn&oh=00_AYDgpf_CGkNDjEBhGFaZs6cN8hBtVbX_vsjCqjvEWWfDDQ&oe=672A22A7', text: 'Excursión.'
+  },
+]
+---
+<section class="bg-slate-100">
+  <MaxScreen class="px-4 py-20 h-full">
+    <Title class="text-center">Experiencias destacadas</Title>
+    <!-- Contenedor Grid para la Galería -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-[1100px] mx-auto">
+      {
+        images.map(image => (
+          <Experiencia key={image.id}
+          imagen={image.image}
+          texto={image.text} />
+        ))
+      }
+    </div>
+  </MaxScreen>
+</section>

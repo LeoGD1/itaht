@@ -1,0 +1,41 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import Title from "../Title.astro"
+import Ventaja from "./Ventaja.astro"
+import CTA from "../CTA.astro"
+
+import AncleRigth from "../icons/AncleRigth.astro"
+
+
+const advantages = [
+  {number: '01', advantage: '+47 años de experiencia y calidad académica.'},
+  {number: '02' ,advantage: 'Somos una preparatoria incorporada a la UAEMex.'},
+  {number: '03' ,advantage: 'Actividades extracurriculares que complementan la formación académica.'},
+  {number: '04' ,advantage: 'Programa de becas por rendimiento académico.'},
+  {number: '05' ,advantage: 'Comunidad basada en respeto responsabilidad y trabajo en equipo.'},
+  {number: '06' ,advantage: 'Contamos con colegiaturas completamente accesibles.'},
+]
+---
+
+<section class="bg-red-400" >
+  <MaxScreen class="px-4 py-20">
+    <Title class="text-white text-center">Ventajas de pertenecer a ITAHT</Title>
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      {
+        advantages.map(({ advantage, number }) => (
+          <Ventaja
+            ventaja={advantage}
+            numero={number}
+            />
+        ))
+      } 
+    </div>
+    <div class="w-full flex justify-center mt-5">
+      <CTA class="flex gap-x-2 items-center text-white underline"
+        href="#"
+        texto="Conoce nuestra oferta">
+        <AncleRigth slot="after"/>
+      </CTA>
+    </div>
+  </MaxScreen>
+</section>

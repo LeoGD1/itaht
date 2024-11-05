@@ -1,0 +1,88 @@
+---
+/* LAYOUTS */
+import MaxScreen from '../layouts/MaxScreen.astro'
+/* ICONS */
+import AncleRigth from '../components/icons/AncleRigth.astro'
+import XMark from '../components/icons/XMark.astro'
+import Menu from '../components/icons/Menu.astro'
+
+const pages = [
+  {name: 'Inicio', path: '#'},
+  {name: 'Oferta Educativa', path: '#'},
+  {name: 'Actividades', path: '#'},
+  {name: 'Nosotros', path: '#'},
+]
+---
+
+<nav class="fixed w-full h-16 p-6 transition-all duration-300 z-50" id="nav">
+  <MaxScreen class="flex justify-between items-center">
+    <img class="w-24 cursor-pointer select-none" src="/logo-blanco-itaht.svg" alt="logo ITAHT" id="logo-blanco" />
+    <Menu class="cursor-pointer" 
+      width="35"
+      height="35"
+      id="menu-icon"
+      stroke="#fff" />
+    <ul class="fixed top-0 left-[-100%] flex flex-col h-full w-full bg-blue-itaht text-white justify-center px-9 text-left transition-all sm:w-[60%] lg:w-[30%]" id="nav-ul">
+      <div class="absolute w-full flex py-5 px-4 top-0 left-0 justify-between">
+        <img class="w-24 cursor-pointer select-none" src="/logo-blanco-itaht.svg" alt="logo ITAHT" />
+        <XMark class="cursor-pointer"
+          height="35"
+          width="35"
+          id="x-mark" />
+      </div>
+      {
+        pages.map(({name,  path}) => (
+          <li class="w-full mb-9">
+            <a href={path} class="w-full px-3 py-2 text-xl font-semibold flex justify-between items-center">
+              {name}
+              <AncleRigth />
+              </a>
+          </li>
+        ))
+      }
+    </ul>
+  </MaxScreen>
+</nav>
+
+<script>
+
+  const menuIcon = document.getElementById('menu-icon')
+  const nav = document.getElementById('nav')
+  const navUl = document.getElementById('nav-ul')
+  const xMark = document.getElementById('x-mark')
+  const logoWhite = document.getElementById('logo-blanco') as HTMLImageElement
+
+  menuIcon?.addEventListener('click', () => {
+      navUl?.classList.remove('left-[-100%]')
+      navUl?.classList.add('left-0')
+  })
+
+  xMark?.addEventListener('click', () => {
+    navUl?.classList.remove('left-0')
+    navUl?.classList.add('left-[-100%]')
+  })
+
+  window.addEventListener('scroll', () => {
+    let positionScroll = window.pageYOffset
+
+    if(positionScroll > 65) {
+      nav?.classList.add('bg-white')
+      nav?.classList.add('shadow-black')
+      nav?.classList.add('shadow-sm')
+      logoWhite.src = "/logo-color-itaht.svg"
+      menuIcon?.setAttribute('stroke', '#003785')
+      /* nav?.classList.remove('h-16')
+      nav?.classList.add('h-14') */
+    } else if(positionScroll < 65) {
+      nav?.classList.remove('bg-white')
+      nav?.classList.remove('shadow-black')
+      nav?.classList.remove('shadow-sm')
+      logoWhite.src = "/logo-blanco-itaht.svg"
+      menuIcon?.setAttribute('stroke', '#fff')
+      /* nav?.classList.remove('h-14')
+      nav?.classList.add('h-16') */
+    }
+  })
+
+
+</script>

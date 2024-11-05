@@ -1,0 +1,53 @@
+---
+import AncleRigth from "../icons/AncleRigth.astro"
+
+const { pregunta, respuesta } = Astro.props
+---
+
+<article class="w-full mb-2 bg-white rounded-md">
+  <div class="text-left text-balance w-full px-4 py-5 flex justify-between cursor-pointer items-center" id="pregunta">
+    <p class="text-base font-medium">{pregunta}</p>
+    <AncleRigth />
+  </div>
+  <div class="h-0 overflow-hidden transition-all duration-300" id="respuesta">
+    <p class="p-4 text-gray-800">{respuesta}</p>
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll<HTMLDivElement>('#pregunta').forEach(question => {
+    question.addEventListener('click', () => {
+      const answerElement = question.nextElementSibling as HTMLDivElement | null;
+
+      if (answerElement) {
+        if (answerElement.style.height === '0px' || !answerElement.style.height) {
+          answerElement.style.height = `${answerElement.scrollHeight}px`;
+        } else {
+          answerElement.style.height = '0px';
+        }
+      }
+    });
+  });
+
+  // Inicializar la altura en 0 para asegurar que esté oculta al cargar la página
+  document.querySelectorAll<HTMLDivElement>('#respuesta').forEach(answer => {
+    answer.style.height = '0px';
+  });
+</script>
+
+
+<!-- <script>
+  const preguntas = document.querySelectorAll('#pregunta')
+
+  preguntas.forEach((pregunta) => {
+    pregunta.addEventListener('click', () => {
+      let height = 0
+      let respuesta = pregunta.nextElementSibling
+      if(respuesta.clientHeight === 0){
+        height = respuesta.scrollHeight
+      }
+      respuesta.classList.add(`h-[${height}px]`)
+      respuesta.classList.remove('h-0');
+    })
+  })
+</script> -->

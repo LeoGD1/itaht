@@ -1,0 +1,35 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import Title from "../Title.astro"
+import Paragraph from "../Paragraph.astro"
+import CTA from "../CTA.astro"
+import AncleRigth from "../icons/AncleRigth.astro"
+---
+
+<section>
+  <MaxScreen class="px-6 py-20 lg:p-12">
+    <div>
+      <Title class="text-center">¿Por que estudiar en ITAHT?</Title>
+      <div class="flex flex-col gap-y-4">
+        <Paragraph>
+          La educación <strong>preparatoria</strong> es una <strong>etapa clave</strong> en el desarrollo de los jóvenes, pues conecta la formación básica con el nivel universitario y les <strong>proporciona habilidades esenciales</strong> para la vida adulta. Durante este periodo, los estudiantes no solo consolidan conocimientos académicos, sino que también <strong>fortalecen competencias</strong> sociales, emocionales y tecnológicas que serán cruciales para su futuro.
+        </Paragraph>
+        <Paragraph>
+          Estudiar en el<strong>Instituto Tecnico Administrativo y Humanístico de Toluca</strong> significa prepararse para un entorno competitivo y en constante cambio. Aquí, cada alumno <strong>recibe las herramientas necesarias</strong> para alcanzar su máximo potencial, construyendo un <strong>futuro lleno de oportunidades.</strong> Promovemos el pensamiento crítico y el trabajo en equipo, asegurando que nuestros egresados enfrenten los desafíos del mañana con confianza y listos para dejar una <strong>huella positiva</strong> en la sociedad.
+        </Paragraph>
+        <Paragraph>
+          En <strong>ITAHT</strong>, entendemos que la educación <strong>no se limita al aprendizaje</strong> en el aula; por eso, además de ofrecer una sólida formación académica, <strong>promovemos</strong> activamente <strong>actividades extracurriculares</strong> que permiten a nuestros estudiantes explorar y desarrollar talentos en diversas áreas. Desde <strong>talleres de danza y música</strong> hasta <strong>deportes como fútbol y basquetbol</strong>, fomentamos un equilibrio entre el rendimiento académico y el crecimiento personal.
+        </Paragraph>
+      </div>
+      <div class="grid place-items-center mt-10 font-medium">
+        <CTA class="flex gap-x-2 items-center text-blue-itaht underline" 
+          texto="Conoce más sobre nosotros"
+          href="#">
+          <AncleRigth 
+            slot="after"
+            stroke="#0C067A" />
+        </CTA>
+      </div>
+    </div>
+  </MaxScreen>
+</section>

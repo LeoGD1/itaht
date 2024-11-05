@@ -1,0 +1,26 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro";
+import Title from "../Title.astro";
+import Pregunta from "./Pregunta.astro";
+
+const questions = [
+  {id: 1, question: '¿La preparatoria ITAHT está incorporada a la UEAMex?', answer:'Si, seguimos los planes de la Universidad Autónoma del Estado de México, lo que garantiza la calidad educativa y facilita el ingreso de nuestros egresados a sus programas universitarios.'},
+  {id: 2, question: '¿Qué documentos necesitan para la inscripción?', answer:'Acta de nacimiento certificada no mayor a 3 meses, CURP, 2 fotografías tamaño infantil, carta de buena conducta, certificado de secundaria'},
+  {id: 3, question: '¿Ofrecen becas o descuentos?', answer: 'Si, contamos con becas académicas para alumnos y alumnas con alto rendimiento, además de descuentos especiales para familias de con mas o un integrante inscrito a la Institución'}
+]
+---
+
+<section class="bg-slate-100">
+  <MaxScreen class="px-4 py-20">
+    <Title class="text-center">Preguntas Frecuentes</Title>
+    <div>
+      {
+        questions.map(question => (
+          <Pregunta 
+          pregunta={question.question} 
+          respuesta={question.answer} />
+        ))
+      }
+    </div>
+  </MaxScreen>
+</section>

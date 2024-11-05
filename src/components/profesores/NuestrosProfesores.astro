@@ -1,0 +1,25 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import Profesor from "./Profesor"
+import Title from "../Title.astro"
+---
+
+<section>
+  <MaxScreen class="px-4 py-20">
+    <Title class="text-center">Nuestros profesores</Title>
+    <div>
+      <Profesor client:visible />
+    </div>
+  </MaxScreen>
+</section>
+
+<style>
+  :root {
+    /* NAVIGATION */
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-color: #0C067A;
+    /* PAGINATION */
+    --swiper-pagination-color: #0C067A;
+  }
+</style>

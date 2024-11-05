@@ -1,0 +1,10 @@
+---
+const {class: customClass, ...props} = Astro.props
+const combinedClasses = `max-w-[1100px] w-full h-full mx-auto ${customClass}`
+---
+
+<div
+  {...props}
+  class={combinedClasses}>
+  <slot />
+</div>

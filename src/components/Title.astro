@@ -1,0 +1,11 @@
+---
+const {class: customClass, ...props} = Astro.props
+const combinedClasses = `font-semibold text-4xl mb-10 font-['Alatsi'] ${customClass}`
+---
+
+
+<h2 {...props} 
+  class={combinedClasses}>
+  <slot />
+  <p class=""></p>
+</h2>

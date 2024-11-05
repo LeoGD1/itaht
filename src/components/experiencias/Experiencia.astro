@@ -1,0 +1,9 @@
+---
+const { imagen, texto } = Astro.props
+---
+
+<div class="bg-blue-300 aspect-[16/9] rounded-lg overflow-hidden relative cursor-pointer group">
+    <img src={imagen} alt={texto} class="h-full w-auto object-cover group-hover:scale-125 transition-transform">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/90 to-transparent"></div>
+    <h5 class="absolute bottom-0 left-0 m-4 text-white text-xl font-semibold">{texto}</h5>  
+</div>

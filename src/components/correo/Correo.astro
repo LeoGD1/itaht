@@ -1,0 +1,16 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import Title from "../Title.astro"
+---
+
+<section class=" w-full bg-hero-email sm:bg-hero-email-resp bg-cover bg-center">
+  <MaxScreen class="px-4 py-20">
+    <div class="w-full sm:w-[600px]">
+      <Title class="text-left text-white">Ingresa tu correo eléctronico para enviarte más información</Title>
+      <form action="" class="flex gap-2 flex-col sm:flex-row flex-grow">
+        <input type="email" placeholder="example@gmail.com" class="p-3 text-md w-full rounded-md" required>
+        <button type="submit" class="w-full bg-red-itaht hover:bg-red-500 text-white p-2 rounded-md sm:py-3 sm:px-0 sm:w-28">Enviar</button>
+      </form>
+    </div>
+  </MaxScreen>
+</section>

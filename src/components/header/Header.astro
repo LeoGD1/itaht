@@ -1,0 +1,24 @@
+---
+import MaxScreen from "../../layouts/MaxScreen.astro"
+import CTA from "../CTA.astro"
+import Calendar from "../icons/Calendar.astro"
+---
+
+<header class="bg-hero-image w-full h-[500px] bg-cover bg-center px-4 overflow-hidden">
+  <MaxScreen>
+    <div class="flex w-full h-full items-center">
+      <div class="flex flex-col h-full w-full items-start justify-center text-white text-left lg:w-[60%]">  
+        <h1 class=" text-balance text-4xl font-semibold mb-4 font-['Alatsi']">+47 años de experiencia y calidad académica nos respaldan</h1>
+        <p class="text-base font-normal mb-6">Inscríbete y forma parte de nuestra comunidad ITAHT.</p>
+        <CTA class="flex gap-1 items-center justify-center bg-red-itaht px-6 py-3 hover:bg-red-500 text-sm transition-colors cursor-pointer rounded-md"
+        texto="Agenda una cita"
+        ref="#">
+          <Calendar slot="before"/>
+        </CTA>
+      </div>
+      <div class="hidden lg:flex items-end w-[40%] relative h-full">
+        <img class="w-[100%]" src="https://png.pngtree.com/png-vector/20240803/ourmid/pngtree-smiling-student-girl-with-backpack-and-books-clipart-illustration-png-image_13366155.png" alt="estudiante con  mochila">
+      </div>
+    </div>
+  </MaxScreen>
+</header>
